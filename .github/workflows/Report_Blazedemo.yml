@@ -4,7 +4,7 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the $default-branch branch
   push:
-    branches: [ main ]
+    branches: bladedemo_test
   pull_request:
     branches: [ main ]
  # Allows you to run this workflow manually from the Actions tab
@@ -29,4 +29,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: jmeter-results
-          path: result1.jtl
+          path: result.jtl
